@@ -1,8 +1,8 @@
-
-
+export const dynamic = 'force-dynamic';
 import { useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import SuccessContent from './SuccessContent';
+import SuccessClient from './SuccessClient';
 
 export default function SuccessPage() {
   const searchParams = useSearchParams();
@@ -20,7 +20,7 @@ export default function SuccessPage() {
 
   return (
     <Suspense fallback={<div>Loading success data...</div>}>
-      <SuccessContent />
+      <SuccessClient />
     </Suspense>
   );
 } 
