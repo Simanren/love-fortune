@@ -1,4 +1,4 @@
-'use client';
+ 'use client';
 
 import { useEffect } from 'react';
 import { useSearchParams } from 'next/navigation';
@@ -26,4 +26,4 @@ export default function SuccessClient() {
       </div>
     </main>
   );
-} 
+}
